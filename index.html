@@ -1,12 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="inter-uniquifier">
+    <div class="container">
+      <div class="header">
+        <h2>Checkout <span>3 items</span></h2>
+      </div>
+      <div class="checkout">
+        <div class="cart">
+          <div class="item1">
+            <img src="resources/Gold@2x.png" alt="iphone 12 pro" />
+          </div>
+          <div class="item1-name">
+            <h2>iPhone 12 Pro</h2>
+            <p class="color">Gold</p>
+          </div>
+          <div class="item1-quantity">
+            <p>x 1</p>
+          </div>
+          <div class="item1-price">
+            <p>$999.00</p>
+          </div>
+          <div class="item1-cancel">
+            <p>&#x2715;</p>
+          </div>
+          <div class="item2">
+            <img src="resources/Apple-watchx2.png" alt="Apple Watch" />
+          </div>
+          <div class="item2-name">
+            <h2>Apple Watch</h2>
+            <p class="color">Blue</p>
+          </div>
+          <div class="item2-quantity">
+            <p>x 1</p>
+          </div>
+          <div class="item2-price">
+            <p>$399.00</p>
+          </div>
+          <div class="item2-cancel">
+            <p>&#x2715;</p>
+          </div>
+          <div class="item3">
+            <img src="resources/iMac@2x.png" alt="iMac" />
+          </div>
+          <div class="item3-name">
+            <h2>iMac</h2>
+            <p class="color">Green</p>
+          </div>
+          <div class="item3-quantity">
+            <p>x 1</p>
+          </div>
+          <div class="item3-price">
+            <p>$1199.00</p>
+          </div>
+          <div class="item3-cancel">
+            <p>&#x2715;</p>
+          </div>
+          <div class="hr-line">
+            <hr />
+          </div>
+          <div class="coupon">
+            <input type="text" placeholder="Enter coupon code" />
+            <button>Apply Coupon</button>
+          </div>
+          <div class="sub-total">Sub total</div>
+          <div class="sub-total-amount">$2597.00</div>
+          <div class="tax">Tax</div>
+          <div class="tax-amount">$623.00</div>
+          <div class="total">Total</div>
+          <div class="total-amount">$3220.00</div>
+        </div>
+        <div class="contact-info">
+          <h2>Contact Information</h2>
+          <form action="">
+            <label for="name">First & Last name</label>
+            <input type="text" placeholder="Enter first & last name" />
+            <label for="">Email Address</label>
+            <input type="email" placeholder="Enter email address" />
+            <div class="country-code">
+              <div class="cntry-selection">
+                <label for="">Country</label>
+                <select value="Finland">
+                  <option name="Finland" id="Finland">Finland</option>
+                  <option name="Bangladesh" id="Bangladesh">Bangladesh</option>
+                  <option name="Saudi Arabia" id="saudi Arabia">
+                    Saudi Arabia
+                  </option>
+                  <option name="America" id="America">America</option>
+                  <option name="Russia" id="Russia">Russia</option>
+                </select>
+              </div>
+              <div class="ps-code">
+                <label for="postal code">Postal Code</label>
+                <input type="number" placeholder="00270" />
+              </div>
+            </div>
+            <button class="next">Continue</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

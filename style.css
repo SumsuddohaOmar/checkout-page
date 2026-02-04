@@ -1,0 +1,162 @@
+
+.inter-uniquifier{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.container{
+    width: 219vh;
+    height: 40vh;
+    background: url("resources/background-image@2x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+
+.checkout{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    border: 1px solid red;
+    padding-bottom: 20px;
+}
+.cart{
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
+    width: 45%;
+    padding: 2rem;
+    background-color: #D2D5DA;
+    display: grid;
+    grid-template-areas: 
+    "item1   item1-name       item1-price"
+    "item1   item1-quantity   item1-cancel"
+    "item2   item2-name       item2-price"
+    "item2   item2-quantity   item2-cancel"
+    "item3   item3-name       item3-price"
+    "item3   item3-quantity   item3-cancel"
+    "hr-line hr-line          hr-line"
+    "coupon  coupon           coupon"
+    "sub-total sub-total      sub-total-amount"
+    "tax      tax             tax-amount"
+    "total total              total-amount"
+    ;
+    row-gap: 1rem;
+    
+}
+.contact-info{
+    width: 45%;
+}
+.item1{
+    grid-area: item1;
+    justify-self: center;
+    border-radius: 10px;
+    padding: 10px 50px 10px;
+    background-color: #ffffff;
+}
+.item1-name{
+    grid-area: item1-name;
+    
+}
+.item1-quantity{
+    grid-area: item1-quantity;
+}
+.item1-price{
+    grid-area: item1-price;
+    text-align: right;
+}
+.item1-cancel{
+    grid-area: item1-cancel;
+    text-align: right;
+}
+.item2{
+    grid-area: item2;
+    justify-self: center;
+    border-radius: 10px;
+    padding: 30px 60px 0px;
+    background-color: #ffffff;
+}
+.item2-name{
+    grid-area: item2-name;
+}
+.item2-quantity{
+    grid-area: item2-quantity;
+}
+.item2-price{
+    grid-area: item2-price;
+    text-align: right;
+}
+.item2-cancel{
+    grid-area: item2-cancel;
+    text-align: right;
+}
+.item3{
+    grid-area: item3;
+    justify-self: center;
+    border-radius: 10px;
+    padding: 20px 10px 2px;
+    background-color: #ffffff;
+}
+.item3-name{
+    grid-area: item3-name;
+}
+.item3-quantity{
+    grid-area: item3-quantity;
+}
+.item3-price{
+    grid-area: item3-price;
+    text-align: right;
+}
+.item3-cancel{
+    grid-area: item3-cancel;
+    text-align: right;
+}
+.hr-line{
+    grid-area: hr-line;
+}
+.coupon{
+    grid-area: coupon;
+}
+.sub-total{
+    grid-area: sub-total;
+}
+.sub-total-amount{
+    grid-area: sub-total-amount;
+    text-align: right;
+}
+.tax{
+    grid-area: tax;
+}
+.tax-amount{
+    grid-area: tax-amount;
+    text-align: right;
+}
+.total{
+    grid-area: total;
+}
+.total-amount{
+    grid-area: total-amount;
+    text-align: right;
+}
+/* Cart styles */
+.item1-name h2, .item2-name h2, .item3-name h2{
+    margin-bottom: 0.5rem;
+}
+.item1-name p, .item2-name p, .item3-name p{
+    margin-top: 0;
+}
+/* Contact-info styles */
+.contact-info{
+    background-color: #F3F4F6;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
+}
+.contact-info label{
+    display: block;
+}
+.country-code{
+    display: flex;
+}
+
