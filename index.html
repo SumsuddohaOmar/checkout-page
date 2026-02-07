@@ -74,10 +74,10 @@
             <input type="text" placeholder="Enter coupon code" />
             <button>Apply Coupon</button>
           </div>
-          <div class="sub-total">Sub total</div>
-          <div class="sub-total-amount">$2597.00</div>
-          <div class="tax">Tax</div>
-          <div class="tax-amount">$623.00</div>
+          <div class="sub-total color">Sub total</div>
+          <div class="sub-total-amount color">$2597.00</div>
+          <div class="tax color">Tax</div>
+          <div class="tax-amount color">$623.00</div>
           <div class="total">Total</div>
           <div class="total-amount">$3220.00</div>
         </div>
@@ -85,13 +85,13 @@
           <h2>Contact Information</h2>
           <form action="">
             <label for="name">First & Last name</label>
-            <input type="text" placeholder="Enter first & last name" />
+            <input type="text" id="name" placeholder="Enter first & last name" />
             <label for="">Email Address</label>
-            <input type="email" placeholder="Enter email address" />
+            <input type="email" id="email" placeholder="Enter email address" />
             <div class="country-code">
               <div class="cntry-selection">
                 <label for="">Country</label>
-                <select value="Finland">
+                <select value="Finland" class="country">
                   <option name="Finland" id="Finland">Finland</option>
                   <option name="Bangladesh" id="Bangladesh">Bangladesh</option>
                   <option name="Saudi Arabia" id="saudi Arabia">
@@ -103,7 +103,7 @@
               </div>
               <div class="ps-code">
                 <label for="postal code">Postal Code</label>
-                <input type="number" placeholder="00270" />
+                <input type="number" id="postal-code" placeholder="00270" />
               </div>
             </div>
             <button class="next">Continue</button>
